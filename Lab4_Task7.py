@@ -20,4 +20,6 @@ def sed(file1,file2):
  except:
   print("Operation Failed")
 
-
+a = input("Enter first file")
+b = input("Enter second")
+sed(a,b)
