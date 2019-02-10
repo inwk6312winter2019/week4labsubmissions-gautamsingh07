@@ -9,3 +9,9 @@ def walk(dir):
         else:
             walk(path)
 
+def walks(dir):
+    for root, dirs, files in os.walk(dirn):
+        for filename in files:
+            print os.path.join(root, filename)
+
+    walks(".")
